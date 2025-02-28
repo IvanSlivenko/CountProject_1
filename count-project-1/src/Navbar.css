@@ -1,0 +1,76 @@
+/* Основні стилі навігації */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.navbar-link:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Випадаюче меню */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-menu .navbar-link {
+    color: black;
+    padding: 8px 12px;
+    white-space: nowrap;
+}
+
+.dropdown-menu .navbar-link:hover {
+    background-color: #ddd;
+}
+
+/* Відображення випадаючого меню при наведенні */
+.navbar-dropdown:hover .dropdown-menu {
+    display: block;
+}
